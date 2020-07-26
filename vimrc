@@ -33,7 +33,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'skanehira/preview-markdown.vim'
-Plugin 'Valloric/YouCompleteMe',{'do':'python3 install.py --all'}
+Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
