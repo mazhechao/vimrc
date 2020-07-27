@@ -33,7 +33,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'skanehira/preview-markdown.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -181,3 +181,5 @@ let &rtp .= ',' . expand( '<sfile>:p:h' )
 
 set list
 set listchars=tab:>-
+set tabstop=4
+set shiftwidth=4
