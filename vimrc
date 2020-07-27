@@ -110,6 +110,18 @@ endif
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php
 let &guicursor = &guicursor . ",a:blinkon0"
+" airline
+let g:airline#extensions#tabline#enabled = 1
+" tabline中当前buffer两端的分隔字符
+let g:airline#extensions#tabline#left_sep = ' '
+" tabline中未激活buffer两端的分隔字符
+let g:airline#extensions#tabline#left_alt_sep = '|'
+" tabline中buffer显示编号
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_theme="powerlineish"
+" 映射切换buffer的键位
+nnoremap <tab> :bn<CR>
+nnoremap <s-tab> :bp<CR>
 " NERDTree
 let g:NERDTreeWinSize = 25
 let g:airline#extensions#tabline#enabled = 1
